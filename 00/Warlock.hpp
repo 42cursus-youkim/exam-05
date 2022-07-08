@@ -1,4 +1,6 @@
-#include <iostream>
+#ifndef WARLOCK_HPP
+#define WARLOCK_HPP
+
 #include <string>
 using namespace std;
 
@@ -20,3 +22,5 @@ class Warlock {
   void setTitle(const string& title);
   void introduce() const;
 };
+
+#endif

@@ -1,4 +1,5 @@
 #include "Warlock.hpp"
+#include <iostream>
 
 Warlock::Warlock(const string& name, const string& title)
     : name(name), title(title) {
