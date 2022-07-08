@@ -14,6 +14,7 @@ class SpellBook {
  public:
   SpellBook();
   ~SpellBook();
+
   void learnSpell(ASpell* spell);
   void forgetSpell(const string& spellName);
   ASpell* createSpell(const string& spellName);

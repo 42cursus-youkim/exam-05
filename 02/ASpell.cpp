@@ -8,19 +8,19 @@ ASpell::ASpell(const ASpell& spell)
     : name(spell.getName()), effects(spell.getEffects()) {}
 
 ASpell& ASpell::operator=(const ASpell& spell) {
-  this->name = spell.getName();
-  this->effects = spell.getEffects();
+  name = spell.getName();
+  effects = spell.getEffects();
   return (*this);
 }
 
 ASpell::~ASpell() {}
 
 const string& ASpell::getName() const {
-  return this->name;
+  return name;
 }
 
 const string& ASpell::getEffects() const {
-  return this->effects;
+  return effects;
 }
 
 void ASpell::launch(const ATarget& target) const {

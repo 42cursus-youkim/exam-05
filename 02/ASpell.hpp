@@ -18,8 +18,10 @@ class ASpell {
   ASpell(const ASpell& spell);
   ASpell& operator=(const ASpell& spell);
   virtual ~ASpell();
+
   const string& getName() const;
   const string& getEffects() const;
+
   virtual ASpell* clone() const = 0;
   void launch(const ATarget& target) const;
 };

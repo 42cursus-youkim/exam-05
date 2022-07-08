@@ -15,7 +15,9 @@ class ATarget {
   ATarget(const ATarget& target);
   ATarget& operator=(const ATarget& target);
   virtual ~ATarget();
+
   const string& getType() const;
+  
   virtual ATarget* clone() const = 0;
   void getHitBySpell(const ASpell& spell) const;
 };
