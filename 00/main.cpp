@@ -1,9 +1,11 @@
+#include <iostream>
 #include "Warlock.hpp"
+using namespace std;
 
 int main() {
-  Warlock const richard("Richard", "Mistress of Magma");
+  const Warlock richard("Richard", "Mistress of Magma");
   richard.introduce();
-  std::cout << richard.getName() << " - " << richard.getTitle() << std::endl;
+  cout << richard.getName() << " - " << richard.getTitle() << endl;
 
   Warlock* jack = new Warlock("Jack", "the Long");
   jack->introduce();
