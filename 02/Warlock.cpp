@@ -22,8 +22,7 @@ void Warlock::setTitle(const string& title) {
 }
 
 void Warlock::introduce() const {
-  cout << name << ": I am " << name << ", " << title << "!"
-       << endl;
+  cout << name << ": I am " << name << ", " << title << "!" << endl;
 }
 
 void Warlock::learnSpell(ASpell* spell) {

@@ -9,6 +9,7 @@ class Warlock {
   string name;
   string title;
   SpellBook spellBook;
+
   Warlock();
   Warlock(const Warlock& other);
   Warlock& operator=(const Warlock& other);
