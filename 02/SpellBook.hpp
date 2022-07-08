@@ -8,8 +8,8 @@ using namespace std;
 class SpellBook {
  private:
   vector<ASpell*> spells;
-  SpellBook(const SpellBook& spellBook);
-  SpellBook& operator=(const SpellBook& spellBook);
+  SpellBook(const SpellBook& other);
+  SpellBook& operator=(const SpellBook& other);
 
  public:
   SpellBook();

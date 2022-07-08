@@ -4,12 +4,12 @@ ASpell::ASpell() {}
 
 ASpell::ASpell(string name, string effects) : name(name), effects(effects) {}
 
-ASpell::ASpell(const ASpell& spell)
-    : name(spell.getName()), effects(spell.getEffects()) {}
+ASpell::ASpell(const ASpell& other)
+    : name(other.getName()), effects(other.getEffects()) {}
 
-ASpell& ASpell::operator=(const ASpell& spell) {
-  name = spell.getName();
-  effects = spell.getEffects();
+ASpell& ASpell::operator=(const ASpell& other) {
+  name = other.getName();
+  effects = other.getEffects();
   return (*this);
 }
 

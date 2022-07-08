@@ -12,12 +12,12 @@ class ATarget {
  public:
   ATarget();
   ATarget(const string& type);
-  ATarget(const ATarget& target);
-  ATarget& operator=(const ATarget& target);
+  ATarget(const ATarget& other);
+  ATarget& operator=(const ATarget& other);
   virtual ~ATarget();
 
   const string& getType() const;
-  
+
   virtual ATarget* clone() const = 0;
   void getHitBySpell(const ASpell& spell) const;
 };

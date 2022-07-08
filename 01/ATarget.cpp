@@ -4,10 +4,10 @@ ATarget::ATarget() {}
 
 ATarget::ATarget(const string& type) : type(type) {}
 
-ATarget::ATarget(const ATarget& target) : type(target.getType()) {}
+ATarget::ATarget(const ATarget& other) : type(other.getType()) {}
 
-ATarget& ATarget::operator=(const ATarget& target) {
-  type = target.getType();
+ATarget& ATarget::operator=(const ATarget& other) {
+  type = other.getType();
   return (*this);
 }
 

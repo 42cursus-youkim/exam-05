@@ -9,8 +9,8 @@ class TargetGenerator {
  private:
   vector<ATarget*> targets;
 
-  TargetGenerator(const TargetGenerator& targetGenerator);
-  TargetGenerator& operator=(const TargetGenerator& targetGenerator);
+  TargetGenerator(const TargetGenerator& other);
+  TargetGenerator& operator=(const TargetGenerator& other);
 
  public:
   TargetGenerator();

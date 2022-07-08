@@ -15,8 +15,8 @@ class ASpell {
  public:
   ASpell();
   ASpell(string name, string effects);
-  ASpell(const ASpell& spell);
-  ASpell& operator=(const ASpell& spell);
+  ASpell(const ASpell& other);
+  ASpell& operator=(const ASpell& other);
   virtual ~ASpell();
 
   const string& getName() const;
