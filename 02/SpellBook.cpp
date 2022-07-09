@@ -37,5 +37,5 @@ ASpell* SpellBook::createSpell(const string& spellName) {
     if ((*it)->getName() == spellName)
       return (*it);
   }
-  return 0;
+  return NULL;
 }

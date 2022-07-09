@@ -37,5 +37,5 @@ ATarget* TargetGenerator::createTarget(const string& targetType) {
     if ((*it)->getType() == targetType)
       return (*it);
   }
-  return 0;
+  return NULL;
 }
