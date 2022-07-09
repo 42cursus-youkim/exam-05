@@ -7,9 +7,12 @@ using namespace std;
 
 class Warlock {
  private:
+  typedef vector<ASpell*> Spells;
+  typedef Spells::iterator Iter;
+
   string name;
   string title;
-  vector<ASpell*> spells;
+  Spells spells;
 
   Warlock();
   Warlock(const Warlock& warlock);

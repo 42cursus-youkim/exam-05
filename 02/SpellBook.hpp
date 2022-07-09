@@ -7,7 +7,12 @@ using namespace std;
 
 class SpellBook {
  private:
-  vector<ASpell*> spells;
+  typedef vector<ASpell*> Spells;
+  typedef Spells::iterator Iter;
+
+  Spells spells;
+
+ private:
   SpellBook(const SpellBook& other);
   SpellBook& operator=(const SpellBook& other);
 

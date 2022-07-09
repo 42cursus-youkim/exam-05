@@ -7,7 +7,9 @@ using namespace std;
 
 class TargetGenerator {
  private:
-  vector<ATarget*> targets;
+  typedef vector<ATarget*> Targets;
+  typedef Targets::iterator Iter;
+  Targets targets;
 
   TargetGenerator(const TargetGenerator& other);
   TargetGenerator& operator=(const TargetGenerator& other);

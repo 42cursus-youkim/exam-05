@@ -3,17 +3,16 @@
 SpellBook::SpellBook() {}
 
 SpellBook::~SpellBook() {
-  vector<ASpell*>::iterator it;
-  for (it = spells.begin(); it != spells.end(); it++)
+  for (Iter it = spells.begin(); it != spells.end(); it++) {
     delete (*it);
+  }
   spells.clear();
 }
 
 void SpellBook::learnSpell(ASpell* spell) {
-  if (spell == NULL)
+  if (not spell)
     return;
-  vector<ASpell*>::iterator it;
-  for (it = spells.begin(); it != spells.end(); it++) {
+  for (Iter it = spells.begin(); it != spells.end(); it++) {
     if ((*it)->getName() == spell->getName())
       return;
   }
@@ -21,8 +20,7 @@ void SpellBook::learnSpell(ASpell* spell) {
 }
 
 void SpellBook::forgetSpell(const string& spellName) {
-  vector<ASpell*>::iterator it;
-  for (it = spells.begin(); it != spells.end(); it++) {
+  for (Iter it = spells.begin(); it != spells.end(); it++) {
     if ((*it)->getName() == spellName) {
       delete (*it);
       spells.erase(it);
@@ -32,10 +30,10 @@ void SpellBook::forgetSpell(const string& spellName) {
 }
 
 ASpell* SpellBook::createSpell(const string& spellName) {
-  vector<ASpell*>::iterator it;
-  for (it = spells.begin(); it != spells.end(); it++) {
-    if ((*it)->getName() == spellName)
+  for (Iter it = spells.begin(); it != spells.end(); it++) {
+    if ((*it)->getName() == spellName) {
       return (*it);
+    }
   }
   return NULL;
 }
